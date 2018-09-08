@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="5dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="end"
+            android:layout_marginRight="14dp"
+            >
+
+            <RadioGroup
+                android:id="@+id/CRUDRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/register_button"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/CRUDRadioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="登録"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/CRUDRadioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="リスト"
+                    android:textSize="15sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            >
+
+            <ImageButton
+                android:id="@+id/goHomeImageButton"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/quizinbutton"
+                android:src="@drawable/home"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/registerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="7dp"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="① 単語・熟語 (原型)"
+                android:textSize="19sp"
+                android:gravity="center_vertical"
+                android:background="@drawable/maintopmessage1"
+                android:layout_marginBottom="6dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="❷ 意味 (原型)"
+                android:textSize="19sp"
+                android:gravity="center_vertical"
+                android:background="@drawable/maintopmessage1"
+                android:layout_marginBottom="6dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="③ 例文"
+                android:textSize="19sp"
+                android:gravity="center_vertical"
+                android:background="@drawable/maintopmessage1"
+                android:layout_marginBottom="6dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="❹ 単語・熟語 (①の③での刑)"
+                android:textSize="19sp"
+                android:gravity="center_vertical"
+                android:background="@drawable/maintopmessage1"
+                android:layout_marginBottom="6dp"
+                />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="7dp"
+                android:paddingTop="10dp"
+                >
+
+                <EditText
+                    android:id="@+id/registerWordsEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fadingEdge="vertical"
+                    android:hint="① like"
+                    android:textSize="25sp"
+                    android:focusedByDefault="true"
+                    android:maxLength="27"
+                    />
+                <EditText
+                    android:id="@+id/registerAnswerEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="❷ 好きだ"
+                    android:textSize="25sp"
+                    android:maxLength="27"
+                    />
+                <EditText
+                    android:id="@+id/registerSentenceEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="③ I liked you more than anything else."
+                    android:textSize="25sp"
+                    android:maxLength="54"
+                    />
+                <EditText
+                    android:id="@+id/registerSentenceAnswerEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="❹ liked"
+                    android:textSize="25sp"
+                    android:maxLength="27"
+                    />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/uploadButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/uploadButton"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:text="アップロード"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/mainbutton2"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/updateButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            >
+
+            <Button
+                android:id="@+id/updateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:text="アップデート"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/mainbutton2"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/userListLayout"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/searchUserListEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:hint="검색"
+            android:textSize="22dp"
+            />
+
+        <ListView
+            android:id="@+id/userListListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:dividerHeight="10dp"
+            android:divider="#d1d1d1"
+            >
+        </ListView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

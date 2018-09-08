@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="7dp"
+        android:paddingTop="10dp"
+        >
+
+        <RadioGroup
+            android:id="@+id/quizTypeRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/quizinbutton"
+            >
+
+            <RadioButton
+                android:id="@+id/quizTypeRadioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="意味"
+                android:textSize="15sp"
+                android:paddingRight="10dp"
+                />
+
+            <RadioButton
+                android:id="@+id/quizTypeRadioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="書き込み"
+                android:textSize="15sp"
+                android:paddingRight="10dp"
+                />
+
+            <RadioButton
+                android:id="@+id/quizTypeRadioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="穴埋め"
+                android:textSize="15sp"
+                android:paddingRight="10dp"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <TextView
+    android:id="@+id/sub2TextView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="center_vertical"
+    android:text="default"
+    android:textSize="40sp"
+    android:textAlignment="center"
+    />
+
+    <TextView
+        android:id="@+id/guideTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="default"
+        android:textSize="22sp"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:id="@+id/answerEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="answer"
+        android:textSize="35sp"
+        android:visibility="gone"
+        />
+
+    <RadioGroup
+        android:id="@+id/answerRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <RadioButton
+            android:id="@+id/answerRadioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="answer1"
+            android:textSize="22sp"
+            />
+
+        <RadioButton
+            android:id="@+id/answerRadioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="answer2"
+            android:textSize="22sp"
+            />
+
+        <RadioButton
+            android:id="@+id/answerRadioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="answer3"
+            android:textSize="22sp"
+            />
+
+        <RadioButton
+            android:id="@+id/answerRadioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="answer4"
+            android:textSize="22sp"
+            />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageButton
+            android:id="@+id/sub2BackwardButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_marginRight="20dp"
+            />
+
+        <ImageButton
+            android:id="@+id/sub2ForwardButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/forward"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

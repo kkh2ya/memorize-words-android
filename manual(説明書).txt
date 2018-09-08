@@ -1,0 +1,33 @@
+1. 
+ 仮想マシンである「Oracle VM Virtual Box」又は、「VMWare Workstation」に
+ LAMP(Linux Apache MySQL PHP)サーバである「phypi-1.ova」をインポートします。
+ ネットワーク設定をして、実行します。
+	
+	アイディー : phypi	
+	パスワード : phypi
+
+ (ウェブサーバの制作は「Oracle VM Virtual Box」でしましたので、それで実行すれば、ネットワーク設定が必要ではないかもしれません。)
+
+2.
+ 「Android Studio」で「MemorizeEnglish」プロジェクトをオープンします。
+　AVD、「Pixel API 27」で実行します。(他のバージョンは出来ない可能性があります。)
+
+ (コードでのipは全部、Androidエミュレーター使用詩のLocalhostである「10.0.2.2」を使いました。)
+  
+
+(English)
+1.
+ In the virtual machine "Oracle VM Virtual Box" or "VMWare Workstation", import "LAMP (Linux Apache MySQL PHP) server "phypi-1.ova".
+ Configure network settings and execute.
+
+
+	ID	 : phypi
+	Password : phypi
+
+ (Production of the web server was through "Oracle VM Virtual Box", so if you run in it, network configuration may not be necessary.)
+
+2.
+ Open "MemorizeEnglish" project in "Android Studio".
+ Execute with AVD, "Pixel API 27". (Other versions may not be possible.)
+
+  (All ip in the code used "10.0.2.2" which is the Localhost when using emulator)

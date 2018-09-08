@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/night_sky"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingHorizontal="7dp"
+        android:paddingTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="主人様 "
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@drawable/maintopmessage1"
+            android:layout_marginBottom="10dp"
+            android:drawableRight="@drawable/maid"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="お帰りなさい "
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@drawable/maintopmessage1"
+            android:layout_marginBottom="10dp"
+            android:drawableRight="@drawable/study"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="ボタンをクリックしてください"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@drawable/maintopmessage1"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_weight="8"
+        >
+
+        <Button
+            android:id="@+id/MainButton1"
+            android:layout_width="200sp"
+            android:layout_height="100sp"
+            android:text="暗記"
+            android:textSize="50sp"
+            android:background="@drawable/mainbutton1"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="35dp"
+            />
+
+        <Button
+            android:id="@+id/MainButton2"
+            android:layout_width="200sp"
+            android:layout_height="100sp"
+            android:text="登録"
+            android:textSize="50sp"
+            android:background="@drawable/mainbutton2"
+            android:layout_marginBottom="30dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
